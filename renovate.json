@@ -7,7 +7,9 @@
     "cocoapods",
     "swift"
   ],
-  "labels": ["renovate"],
+  "labels": [
+    "renovate"
+  ],
   "extends": [
     "config:base",
     ":combinePatchMinorReleases",
@@ -17,6 +19,9 @@
     ":noUnscheduledUpdates",
     ":renovatePrefix"
   ],
-  "commitMessagePrefix": "[Bump] "
+  "commitMessagePrefix": "[Bump] ",
+  "lockFileMaintenance": {
+    "enabled": true
+  }
 }
 
