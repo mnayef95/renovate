@@ -1,3 +1,21 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "enabledManagers": [
+    "gradle",
+    "gradle-wrapper",
+    "pub",
+    "cocoapods",
+    "swift"
+  ],
+  "labels": ["renovate"],
+  "extends": [
+    "config:base",
+    ":combinePatchMinorReleases",
+    ":prConcurrentLimit10",
+    ":prHourlyLimitNone",
+    ":ignoreUnstable",
+    ":noUnscheduledUpdates",
+    ":renovatePrefix"
+  ],
+  "commitMessagePrefix": "[Bump] "
 }
