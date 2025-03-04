@@ -11,7 +11,7 @@
     "renovate"
   ],
   "extends": [
-    "config:base",
+    "config:recommended",
     ":combinePatchMinorReleases",
     ":prConcurrentLimit10",
     ":prHourlyLimitNone",
@@ -30,4 +30,3 @@
     "com.glovoapp.android.corelib:contact-tree-sdk"
   ]
 }
-
