@@ -17,11 +17,17 @@
     ":prHourlyLimitNone",
     ":ignoreUnstable",
     ":noUnscheduledUpdates",
-    ":renovatePrefix"
+    ":renovatePrefix",
+    ":dependencyDashboard"
   ],
   "commitMessagePrefix": "[Bump] ",
   "lockFileMaintenance": {
     "enabled": true
-  }
+  },
+  "ignoreDeps": [
+    "dev.flutter.flutter-plugin-loader.gradle.plugin",
+    "com.glovoapp.android.corelib:chat-sdk",
+    "com.glovoapp.android.corelib:contact-tree-sdk"
+  ]
 }
 
