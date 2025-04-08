@@ -30,7 +30,7 @@
         "      (?<depName>[^\\s:]+):\\s*(?<currentValue>[^\\s]+)"
       ],
       "datasourceTemplate": "pub",
-      "versioningTemplate": "semver"
+      "versioningTemplate": "pub"
     }
   ],
   "includePaths": [
