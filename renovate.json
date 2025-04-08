@@ -31,7 +31,8 @@
       "matchStrings": [
         "^\\s{6}(?<depName>[a-zA-Z0-9_]+):\\s+(?<currentValue>[\\d.]+(?:[-+][\\w.]+)?|any)$"
       ],
-      "datasourceTemplate": "pub"
+      "datasourceTemplate": "pub",
+      "versioningTemplate": "pub"
     }
   ],
   "includePaths": [
@@ -49,7 +50,10 @@
   ],
   "packageRules": [
     {
-      "matchManagers": ["pub", "regex"],
+      "matchManagers": [
+        "pub",
+        "regex"
+      ],
       "groupName": "{{{depName}}} version update"
     }
   ],
