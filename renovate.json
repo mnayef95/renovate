@@ -5,7 +5,8 @@
     "gradle-wrapper",
     "pub",
     "cocoapods",
-    "swift"
+    "swift",
+    "regex"
   ],
   "labels": [
     "renovate"
