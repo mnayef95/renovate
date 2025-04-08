@@ -55,6 +55,11 @@
         "pub"
       ],
       "groupName": "{{{depName}}} version update"
+    },
+    {
+      "matchDatasources": ["pub"],
+      "matchPackagePatterns": ["*"],
+      "enabled": true
     }
   ],
   "prHourlyLimit": 1,
