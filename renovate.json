@@ -1,11 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": [
-    "gradle",
-    "gradle-wrapper",
     "pub",
-    "cocoapods",
-    "swift",
     "regex"
   ],
   "labels": [
