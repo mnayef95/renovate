@@ -35,6 +35,30 @@
       "datasourceTemplate": "pub",
       "versioningTemplate": "pub",
       "currentValueTemplate": "{{ currentValue }}"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^melos.yaml$"
+      ],
+      "matchStrings": [
+        "^[ ]{8,}(?<depName>[a-zA-Z0-9_]+):[ ]+(?<currentValue>[^\\s]+)$"
+      ],
+      "datasourceTemplate": "pub",
+      "versioningTemplate": "pub",
+      "currentValueTemplate": "{{ currentValue }}"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^melos.yaml$"
+      ],
+      "matchStrings": [
+        "^[ ]{4,}(?<depName>[a-zA-Z0-9_]+):[ ]+(?<currentValue>[^\\s]+)$"
+      ],
+      "datasourceTemplate": "pub",
+      "versioningTemplate": "pub",
+      "currentValueTemplate": "{{ currentValue }}"
     }
   ],
   "includePaths": [
