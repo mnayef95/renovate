@@ -78,7 +78,8 @@
     {
       "matchManagers": [
         "pub",
-        "regex"
+        "regex",
+        "custom.regex"
       ],
       "groupName": "{{{depName}}} version update"
     }
