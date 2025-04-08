@@ -38,6 +38,7 @@
     }
   ],
   "includePaths": [
+    "melos.yaml",
     "pubspec.yaml",
     "talabat_app/pubspec.yaml",
     "packages/**/pubspec.yaml",
@@ -51,15 +52,8 @@
   ],
   "packageRules": [
     {
-      "matchManagers": [
-        "pub"
-      ],
+      "matchManagers": ["pub", "regex"],
       "groupName": "{{{depName}}} version update"
-    },
-    {
-      "matchDatasources": ["pub"],
-      "matchPackagePatterns": ["*"],
-      "enabled": true
     }
   ],
   "prHourlyLimit": 1,
