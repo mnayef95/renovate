@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   
-  cli_util: 0.4.1
+  cli_util: 0.4.2
   
   melos: 6.3.1
   flutter_bloc: 9.0.0
