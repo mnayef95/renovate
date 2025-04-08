@@ -13,20 +13,49 @@
   "extends": [
     "config:recommended",
     ":combinePatchMinorReleases",
-    ":prConcurrentLimit10",
-    ":prHourlyLimitNone",
     ":ignoreUnstable",
     ":noUnscheduledUpdates",
     ":renovatePrefix",
     ":dependencyDashboard"
   ],
-  "commitMessagePrefix": "[Bump] ",
+  "commitMessagePrefix": "[Renovate] [Bump] ",
   "lockFileMaintenance": {
     "enabled": true
   },
-  "ignoreDeps": [
-    "dev.flutter.flutter-plugin-loader.gradle.plugin",
-    "com.glovoapp.android.corelib:chat-sdk",
-    "com.glovoapp.android.corelib:contact-tree-sdk"
-  ]
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^melos.yaml$"
+      ],
+      "matchStrings": [
+        "^\\s{6}(?<depName>[a-zA-Z0-9_]+):\\s+(?<currentValue>[\\d.]+(?:[-+][\\w.]+)?|any)$"
+      ],
+      "datasourceTemplate": "pub"
+    }
+  ],
+  "includePaths": [
+    "pubspec.yaml",
+    "talabat_app/pubspec.yaml",
+    "packages/**/pubspec.yaml",
+    "plugins/**/pubspec.yaml",
+    "plugins/**/android/build.gradle",
+    "packages/**/android/build.gradle",
+    "talabat_app/android/app/build.gradle",
+    "packages/**/ios/*.podspec",
+    "plugins/**/ios/*.podspec",
+    "talabat_app/ios/Podfile"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": [
+        "pub"
+      ],
+      "groupName": "{{{depName}}} version update"
+    }
+  ],
+  "prHourlyLimit": 1,
+  "prConcurrentLimit": 1,
+  "automerge": true,
+  "automergeType": "pr"
 }
