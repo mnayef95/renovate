@@ -27,7 +27,7 @@
         "melos.yaml"
       ],
       "matchStrings": [
-        "\\s+(?<depName>[^\\s:]+):\\s*(?<currentValue>\\\"?(>=|\\^|~)?[\\d\\.]+(-[\\w\\.]+)?(\\\"|\\')?)"
+        "      (?<depName>[^\\s:]+):\\s*(?<currentValue>[^\\s]+)"
       ],
       "datasourceTemplate": "pub",
       "versioningTemplate": "semver"

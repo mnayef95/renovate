@@ -4,10 +4,6 @@ repository: https://github.com/talabat-dhme/talabat-mobile-app-flutter
 command:
 
   bootstrap:
-    environment:
-      sdk: ">=3.4.4 <4.0.0"
-      flutter: ">=3.22.3"
-
     dependencies:
       path: 1.8.2
       args: 2.3.1
