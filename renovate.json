@@ -1,6 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": [
+    "gradle",
+    "gradle-wrapper",
+    "pub",
+    "cocoapods",
+    "swift",
     "custom.regex"
   ],
   "labels": [
@@ -35,11 +40,20 @@
   "includePaths": [
     "melos.yaml",
     "pubspec.yaml",
-    "packages/**/pubspec.yaml"
+    "talabat_app/pubspec.yaml",
+    "packages/**/pubspec.yaml",
+    "plugins/**/pubspec.yaml",
+    "plugins/**/android/build.gradle",
+    "packages/**/android/build.gradle",
+    "talabat_app/android/app/build.gradle",
+    "packages/**/ios/*.podspec",
+    "plugins/**/ios/*.podspec",
+    "talabat_app/ios/Podfile"
   ],
   "packageRules": [
     {
       "matchManagers": [
+        "pub",
         "custom.regex"
       ],
       "groupName": "{{{depName}}} version update"
