@@ -27,7 +27,8 @@
         "melos.yaml"
       ],
       "matchStrings": [
-        "(?<depName>[a-zA-Z0-9_]+):(?<currentValue>.+)$"
+        "^ *(?<depName>[a-zA-Z0-9_]+): *(?<currentValue>.+)$",
+        "^\\s*(?<depName>[a-zA-Z0-9_]+):\\s*(?<currentValue>.+)$"
       ],
       "datasourceTemplate": "pub",
       "versioningTemplate": "pub"
