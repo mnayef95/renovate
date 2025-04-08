@@ -25,7 +25,7 @@
       "fileMatch": [
         "^melos\\.yaml$",
         "^melos.yaml$",
-        "**/melos.yaml"
+        "melos.yaml"
       ],
       "matchStrings": [
         "^[ ]{6,}(?<depName>[a-zA-Z0-9_]+):[ ]+(?<currentValue>.+)$"
