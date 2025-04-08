@@ -29,7 +29,7 @@
       "matchStrings": [
         "      (?<depName>[^\\s:]+):\\s*(?<currentValue>[^\\s]+)"
       ],
-      "datasourceTemplate": "pub"
+      "datasourceTemplate": "dart"
     }
   ],
   "includePaths": [
