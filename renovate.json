@@ -27,35 +27,25 @@
     {
       "customType": "regex",
       "fileMatch": [
-        "^melos.yaml$"
+        "^melos\\.yaml$"
       ],
       "matchStrings": [
         "^\\s{6,}(?<depName>[a-zA-Z0-9_]+):\\s+(?<currentValue>.+)$"
       ],
       "datasourceTemplate": "pub",
-      "versioningTemplate": "pub",
-      "currentValueTemplate": "{{ currentValue }}"
+      "versioningTemplate": "pub"
     }
   ],
   "includePaths": [
     "melos.yaml",
     "pubspec.yaml",
-    "talabat_app/pubspec.yaml",
-    "packages/**/pubspec.yaml",
-    "plugins/**/pubspec.yaml",
-    "plugins/**/android/build.gradle",
-    "packages/**/android/build.gradle",
-    "talabat_app/android/app/build.gradle",
-    "packages/**/ios/*.podspec",
-    "plugins/**/ios/*.podspec",
-    "talabat_app/ios/Podfile"
+    "packages/**/pubspec.yaml"
   ],
   "packageRules": [
     {
       "matchManagers": [
         "pub",
-        "regex",
-        "custom.regex"
+        "regex"
       ],
       "groupName": "{{{depName}}} version update"
     }
