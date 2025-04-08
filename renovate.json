@@ -28,6 +28,7 @@
       "fileMatch": [
         "^melos.yaml$"
       ],
+      "extractVersionFile": true,
       "matchStrings": [
         "^\\s{6}(?<depName>[a-zA-Z0-9_]+):\\s+(?<currentValue>[\\d.]+(?:[-+][\\w.]+)?|any)$"
       ],
