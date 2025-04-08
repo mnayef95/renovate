@@ -33,7 +33,7 @@
         "^[ ]{6}(?<depName>[^\\\\s:]+):[ ]+(?<currentValue>[^\\\\s#]+)$"
       ],
       "datasourceTemplate": "pub",
-      "versioningTemplate": "pub"
+      "versioningTemplate": "semver"
     }
   ],
   "includePaths": [
