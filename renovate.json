@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "enabledManagers": [
-    "pub",
     "custom.regex"
   ],
   "labels": [
@@ -42,7 +41,6 @@
   "packageRules": [
     {
       "matchManagers": [
-        "pub",
         "custom.regex"
       ],
       "groupName": "{{{depName}}} version update"
