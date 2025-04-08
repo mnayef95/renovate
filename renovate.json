@@ -29,7 +29,8 @@
       "matchStrings": [
         "^ *(?<depName>[a-zA-Z0-9_]+): *(?<currentValue>.+)$",
         "^\\s*(?<depName>[a-zA-Z0-9_]+):\\s*(?<currentValue>.+)$",
-        "      (?<depName>[^\\s:]+):\\s*(?<currentValue>[^\\s]+)"
+        "      (?<depName>[^\\s:]+):\\s*(?<currentValue>[^\\s]+)",
+        "^[ ]{6}(?<depName>[^\\\\s:]+):[ ]+(?<currentValue>[^\\\\s#]+)$"
       ],
       "datasourceTemplate": "pub",
       "versioningTemplate": "pub"
