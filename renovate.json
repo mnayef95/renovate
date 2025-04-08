@@ -52,7 +52,7 @@
     {
       "matchManagers": [
         "pub",
-        "regex"
+        "custom.regex"
       ],
       "groupName": "{{{depName}}} version update"
     }
